@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Kai-Chieh Huang</title>
+        <link href="https://fonts.googleapis.com/css?family=Proxima+Nova" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/filter.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/projects.css">
+    </head>
+    <body>
+        <nav class="navbar">   
+          <ul class="navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <!--<li><a href="#">Achievements</a></li>-->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!--Hamberger menu for smaller devices-->
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+              <div>
+                <div>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <!--<li><a href="#">Achievements</a></li>-->
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--Category filter-->
+        <div id="side-menu" class="side-nav">
+            <svg class="btn-slide" width="20" height="40" xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <g>
+                <polygon id="arrow" points="15,10 5,20 15,30"
+                style="fill:#ccc;stroke:#ccc;stroke-width:2;fill-rule:evenodd;" />
+                <rect class="btn" x="0" y="0" width="20" height="40" onclick="rotate()" />
+              </g>
+            </svg>
+
+            <h1>EXPLORE</h1>
+            <p></p>
+            <a id="filter-generalIntro" href="#All" onclick="searchTag('generalIntro')">All</a>
+            <a id="filter-highlightsIntro" href="#Highlights" onclick="searchTag('highlightsIntro')">Highlights</a>
+            <a id="filter-developmentIntro" href="#Development" onclick="searchTag('developmentIntro')">Development</a>
+            <a id="filter-uxResearchIntro" href="#UX_Research" onclick="searchTag('uxResearchIntro')">UX Research</a>
+            <a id="filter-uxDesignIntro" href="#UX_Design" onclick="searchTag('uxDesignIntro')">UX Design</a>
+            <a id="filter-teamworkIntro" href="#Teamwork" onclick="searchTag('teamworkIntro')">Teamwork</a>
+            <a id="filter-webIntro" href="#Web" onclick="searchTag('webIntro')">Web</a>
+            <a id="filter-mobileIntro" href="#Mobile" onclick="searchTag('mobileIntro')">Mobile</a>
+            <a id="filter-physicalIntro" href="#Physical" onclick="searchTag('physicalIntro')">Physical</a>
+        </div>
+
+        <!--Projects-->
+        <div id="projects" class="project-container">
+          <!--Populated using js/projects.js-->
+        </div>
+        
+        <script src="js/projects.js"></script>
+        <script>
+          var sliderOut = true;
+          document.getElementById('side-menu').style.width = '200px';
+
+          function rotate(){
+            if(sliderOut){
+              document.getElementById('arrow').setAttribute("transform", "rotate(180, 10, 20)");
+              document.getElementById('side-menu').style.width = '30px';
+              if(window.matchMedia("(max-width: 568px)").matches){
+                document.getElementById('projects').style.marginLeft = '10px';
+              }else{
+                document.getElementById('projects').style.marginLeft = '30px';
+              }
+              sliderOut = false;
+            }else{
+              document.getElementById('arrow').setAttribute("transform", "rotate(0)");
+              document.getElementById('side-menu').style.width = '200px';
+              if(window.matchMedia("(max-width: 568px)").matches){
+                document.getElementById('projects').style.marginLeft = '10px';
+              }else{
+                document.getElementById('projects').style.marginLeft = '200px';
+              }
+              sliderOut = true;
+            }
+          }
+        </script>
+        
+    </body>
+</html>

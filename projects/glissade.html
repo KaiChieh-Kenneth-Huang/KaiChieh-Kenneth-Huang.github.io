@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Glissade-project</title>
+        <link href="https://fonts.googleapis.com/css?family=Proxima+Nova" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="../css/project_page.css">
+    </head>
+    <body>
+        <header>
+            <h1>Glissade</h1>
+            <h2>Novel balance haptic feedback on digital pens</h2>
+        </header>
+        <div class="wrapper">
+            <div class="main">
+                <div class="iframe-container">
+                    <iframe src="https://www.youtube.com/embed/PsuFfzBNZjc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <aside class="aside aside-1">
+                <h2>Problem</h2>
+                <p>Stylus haptic output that directly corresponds to pen orientation, a parameter commonly utilized for auxiliary pen input, was unexplored.</p>
+            </aside>
+            <aside class="aside aside-2">
+                <h2>Solution</h2>
+                <p>A novel digital pen that generates balance haptic feedback according to its orientation and demonstrations of its applications.</p>
+            </aside>
+        </div>
+        <div class="container">
+            <div class="width50-l">
+                <div class="inner-container">
+                    <h2>My Roles</h2>
+                    <span class="icons">
+                        <img src="../icons/flask-solid.svg" alt="HCI Researcher">
+                        <div>HCI Researcher</div>
+                    </span>
+                    <span class="icons">
+                        <img src="../icons/tools-solid.svg" alt="Prototyper">
+                        <div>Prototyper</div>
+                    </span>
+                    <span class="icons">
+                        <img src="../icons/laptop-code-solid.svg" alt="Developer">
+                        <div>Developer</div>
+                    </span>
+                </div>
+            </div>
+            <div class="width50-r">
+                <div class="inner-container">
+                    <h2>Team</h2>
+                    <p>Size: 7</p>
+                    <p>As the <strong>primary researcher</strong> of the project, I collaborated with other students in user research sessions and application development under the supervision of my advisor. I contributed to the majority of this work.</p>
+                </div>    
+            </div> 
+            <div class="width100">
+                <h2>Tools and Languages</h2>
+                <span class="icons">
+                    <img src="../icons/arduino.svg" alt="Arduino">
+                    <div>Arduino</div>
+                </span>
+                <span class="icons">
+                    <img src="../icons/unity.svg" alt="Unity">
+                    <div>Unity</div>
+                </span>
+                <span class="icons">
+                    <img src="../icons/3d-printer.jpg" alt="3D Printer">
+                    <div>3D Printer</div>
+                </span>
+                <span class="icons">
+                    <img src="../icons/solidworks.png" alt="Solidworks">
+                    <div>Solidworks</div>
+                </span>
+                <span class="icons">
+                    <img src="../icons/cplusplus.svg" alt="C++">
+                    <div>C++</div>
+                </span>
+                <span class="icons">
+                    <img src="../icons/csharp.svg" alt="C#">
+                    <div>C#</div>
+                </span>
+            </div>
+            <div class="width100">
+                <h2>My Contributions and Artefacts</h2>
+                <div class="artefact">
+                    <h3>Prototype v2</h3>
+                    <div class="process-learnings-box">
+                        <div class="process">
+                            <p>Designed and 3D printed custom components to support the stylus's thin form factor, developed a PID controller for accurate actuation, and developed an pen orientation sensing module.</p>
+                        </div>
+                        <div class="learnings">
+                            <p>Developed techniques for handling interrupt signals in Arduino sketches and mastered 3D printing extremely fine parts.</p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="glissade/glissade.jpg" alt="Prototype Components">
+                    </div>
+                    <div class="image">
+                        <img src="glissade/bowling.gif" alt="Bowling Game">
+                    </div>
+                </div>
+                <div class="artefact">
+                    <h3>Orientation-sensing Module</h3>
+                    <div class="process-learnings-box">
+                        <div class="process">
+                            <p>Discovered that inaccurate sensor readings at certain orientations were caused by Gimbal lock, studied mathematical solutions, and created robust algorithms for calculating the stylus's azimuth and altitude angles.</p>
+                        </div>
+                        <div class="learnings">
+                            <p>Learned to mathematically translate quaternions generated by the inertial measurement unit into pen orientation, solving the Gimbal lock issue concomitant with the usage of yaw-pitch-roll representation.</p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="glissade/azimuth.jpg" alt="Solving Gimbal Lock">
+                    </div>
+                </div>
+                <div class="artefact">
+                    <h3>MPU6050 (Inertial Measurment Unit) Tutorial</h3>
+                    <div class="process-learnings-box">
+                        <div class="process">
+                            <p>Resolved a freezing issue with the code developed by the Arduino community for MPU6050 and cleaned and shared the <a href="https://github.com/KaiChieh-Kenneth-Huang/MPU6050-Tutorial" target="_blank">code</a> on Github.</p>
+                        </div>
+                        <div class="learnings">
+                            <p>Learned to investigate code developed by others and identify the sources of issues.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artefact">
+                    <h3>Prototype v1</h3>
+                    <div class="process-learnings-box">
+                        <div class="process">
+                            <p>Designed and created a prototype stulus that shifts balance by having the motor move along the barrel.</p>
+                        </div>
+                        <div class="learnings">
+                            <p>Learned to construct robust linear actuators and 3D-print custom mechanical parts.</p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="glissade/prototype1.jpg" alt="Prototype Components">
+                    </div>
+                    <div class="image">
+                        <img src="glissade/prototype1-2.jpg" alt="Prototype Components">
+                    </div>
+                    <div class="image">
+                        <img src="glissade/prototype1-3.jpg" alt="Prototype Components">
+                    </div>
+                </div>
+                <div class="artefact">
+                    <h3>Ball Balancing Game</h3>
+                    <div class="process-learnings-box">
+                        <div class="process">
+                            <p>Estabilished serial communication between Arduino and Unity and created an interactive game using Unity.</p>
+                        </div>
+                        <div class="learnings">
+                            <p>Experienced handling system errors caused by delays in serial communication by turing blocking code into non-blocking code.</p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="glissade/ball_balancing.gif" alt="Ball Balancing Game">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        
+        </script>
+
+    </body>
+</html>

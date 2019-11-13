@@ -1,0 +1,69 @@
+:root {
+  --theme-color-1: chocolate;
+  --theme-color-2: rgb(12, 131, 167);
+}
+.side-nav{
+    height:80%;
+    width:0;
+    position:fixed;
+    top:10%;
+    left:0;
+    border-radius: 0 15px 15px 0;
+    background-color:#111;
+    opacity:0.9;
+    overflow-x:hidden;
+    padding-top:0px;
+    z-index: 2;
+    animation-name: slideIn;
+    animation-duration: 1000ms;
+    transition: 0.5s ease-out;
+  }
+  @keyframes slideIn{
+    0% {
+      transform: translate(-200px, 0);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity: 0.9;
+    }
+  }
+  .side-nav h1{
+    padding:10px 10px 10px 30px;
+    background: var(--theme-color-2);
+    text-decoration:none;
+    text-align: left;
+    font-size:17px;
+    color:#fff;
+    display:block;
+    transition:0.3s;
+  }  
+
+  .side-nav p{
+    height: 3px;
+    background: none;
+    display:block;
+    transition:0.3s;
+  }  
+
+  .side-nav a{
+    padding:10px 10px 10px 30px;
+    text-decoration:none;
+    text-align: left;
+    font-size:14px;
+    color:#ccc;
+    display:block;
+    transition:0.3s;
+  }
+  
+  .side-nav a:hover{
+    color:#fff;
+  }
+  
+  .side-nav .btn-slide{
+    position:absolute;
+    top:50%;
+    right:0px;
+    font-size:36px;
+    margin-right:5px;
+  }
