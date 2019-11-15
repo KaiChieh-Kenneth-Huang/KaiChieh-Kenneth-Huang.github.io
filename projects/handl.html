@@ -14,20 +14,21 @@
         <header>
             <h1>Handl</h1>
             <h2>Sharing contact information made easier</h2>
+            <h3>&#9830 1st-Place-Winning Project, <a href="http://cic.gatech.edu/fall-2019" target="_blank">Convergence Innovation Competition</a>, Fall 2019 &#9830</h3>
         </header>
         <div class="wrapper">
             <div class="main">
-                <div class="iframe-container">
-                    <iframe src="https://player.vimeo.com/video/366772178?title=0&byline=0&portrait=0" allowfullscreen></iframe>
-                </div>
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/Cqv5rDoQSqk" allowfullscreen></iframe>
+                    </div>
             </div>
             <aside class="aside aside-1">
-                <h2>Goal</h2>
-                <p>Facilitate the process of exchanging contact information (e.g. phone number or social media) during or after a conversation, which may involve multiple steps and can be tedious.</p>
+                <h2>Problem</h2>
+                <p>The process of exchanging contact information (e.g. phone number or social media) during or after a conversation involves multiple steps, which can cause moments of awkward silence.</p>
             </aside>
             <aside class="aside aside-2">
                 <h2>Outcome</h2>
-                <p>A smartphone app that streamline the exchange process. Its core functionality is to deliver one’s contact information (phone number, name, and/or social media info) via QR codes, which are scanned and collected by the other person. This approach has the advantage of being fast, requiring little human effort, and independence from internet/cellular network.</p>
+                <p>A smartphone app that streamlines the exchange process. Its core functionality is to deliver one’s contact information (phone number, name, and/or social media links) via QR codes, which are scanned and collected by the other person. This approach has the advantage of being fast and requiring little human effort.</p>
             </aside>
         </div>
         <div class="container">
@@ -89,37 +90,60 @@
             <div class="width100">
                 <h2>My Contributions and Artefacts</h2>
                 <div class="artefact">
-                    <h3>Handl Website</h3>
-                    <p>I created a <a href="https://handl-qr.glitch.me/" target="_blank">website</a> for our app that showcases the project.</p>
-                    <div class="image">
-                        <a href="https://handl-qr.glitch.me/" target="_blank">
-                            <img src="handl/website.jpg" alt="Handl Website">
-                        </a>
+                    <h3>Final Version App UI</h3>
+                    <div class="process-learnings-box">
+                        <div class="process">
+                            <p>Identified UI deficiencies in the previous prototype version, communicated with the designer and developers to improve the UI, and developed the accordions for text input.</p>
+                        </div>
+                        <div class="learnings">
+                            <p>Learned to create maintainable/scalable accordions using state variables, objects, and loops in React Native.</p>
+                        </div>
+                    </div>
+                    <div class="image_long">
+                        <img src="handl/drop_down.gif" alt="Acccordion Text Input">
                     </div>
                 </div>
                 <div class="artefact">
-                        <h3>Handl App</h3>
-                        <p>According to our final mockup version, I developed the app together with the other developers.</p>
-                        <div>
-                            <div class="list">
-                                These are my contributions:
-                                <ul>
-                                    <li>Implementation of UI</li>
-                                    <li>Translation of URLs/vCards into QR codes</li>
-                                    <li>Storage/management of user information</li>
-                                </ul>
-                            </div>
+                    <h3>Handl Website</h3>
+                    <div class="process-learnings-box">
+                        <div class="process">
+                            <p>Created a <a href="https://handl-qr.glitch.me/" target="_blank">website</a> for our app by modifying and adding to an open-source template.</p>
                         </div>
-                        <div class="image_long">
-                            <img src="handl/handl_app1.gif" alt="XD prototype 1">
-                        </div>
-                        <div class="image_long">
-                            <img src="handl/handl_app2.gif" alt="XD prototype 2">
+                        <div class="learnings">
+                            <p>Learned how to quickly transform a website template into one that fits our needs.</p>
                         </div>
                     </div>
+                    <div class="image">
+                        <img src="handl/website.jpg" alt="Handl Website">
+                    </div>
+                </div>
+                <div class="artefact">
+                    <h3>App UI and Functions</h3>
+                    <div class="process-learnings-box">
+                        <div class="process">
+                            <p>Designed and implemented the translation of URLs/profile information into QR codes and programmed the storage/management of user information.</p>
+                        </div>
+                        <div class="learnings">
+                            <p>Learned to use local storage (AsyncStorage) and server storage (via RESTful API) to persist user data in the form of objects and experienced the convenience of writing maintainable and scalable code by using loops when developing the QR code components.</p>
+                        </div>
+                    </div>
+                    <div class="image_long">
+                        <img src="handl/handl_app1.gif" alt="QR Code Generation">
+                    </div>
+                    <div class="image_long">
+                        <img src="handl/handl_app2.gif" alt="Scanning the QR Codes">
+                    </div>
+                </div>
                 <div class="artefact">
                     <h3>Adobe XD Mockup</h3>
-                    <p>I created clickable mockups for early iterations of our app and collected feedback with it.</p>
+                    <div class="process-learnings-box">
+                        <div class="process">
+                            <p>Designed system information architecture according to feature requirements and created clickable mockups for early testing.</p>
+                        </div>
+                        <div class="learnings">
+                            <p>Learned to create high fidelity mockups with animations and to collect user feedback with them.</p>
+                        </div>
+                    </div>
                     <div class="image_long">
                         <img src="handl/xd_prototype1.gif" alt="XD prototype 1">
                     </div>
@@ -131,36 +155,42 @@
                     </div>
                 </div>
                 <div class="artefact">
+                    <h3>Storyboarding and Ideation</h3>
+                    <div class="process-learnings-box">
+                        <div class="process">
+                            <p>Lead team discussions on various use cases/scenarios in which the app may be used with the help of storyboards.</p>
+                        </div>
+                        <div class="learnings">
+                            <p>Learned that presenting ideas in simple storyboards helps the team capture user needs and identify corner use cases.</p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="handl/storyboard.jpg" alt="Discussion with Storyboards">
+                    </div>
+                </div>
+                <div class="artefact">
                     <h3>Interviews and Affinity Map</h3>
-                    <p>According to results from nine interviews, we performed affinity mapping as a team. According to the results of the affinity mapping, I identified the following design high level implications:</p>
-                    <div class="list">
-                        <ul>
-                            <li>Design should keep the needs of both of the people involved in the contact exchange in mind</li>
-                            <li>Design should support common social media exchange</li>
-                            <li>Design should support saving phone number and contact name</li>
-                            <li>Design could leverage traditional SMS/calls to save/send contact since people are accustomed to these methods</li>
-                            <li>Design needs alternatives for network-less situations</li>
-                            <li>Design should adapt to the user's context of use</li>
-                            <li>Design should minimize having the user type</li>
-                            <li>If design involves search, the search needs to be accurate</li>
-                        </ul>
+                    <div class="process-learnings-box">
+                        <div class="process">
+                            <p>Conducted interviews to understand user needs when exchanging contact information, performed affinity mapping on user research findings as a team, and identified design implications.</p>
+                        </div>
+                        <div class="learnings">
+                            <p>Learned how to identify user needs from interviews and collaboratively analyze them with a team.</p>
+                        </div>
                     </div>
                     <div class="image">
                         <img src="handl/affinity_map.jpg" alt="Affinity Map">
                     </div>
                 </div>
                 <div class="artefact">
-                    <h3>Domain and competitive research</h3>
-                    <p>To understand the domain and competition, I gathered information through the interviews we conducted and existing solutions online. I then organize the data, analyzed the strengths and weaknesses of various approaches, and identified value propositions and customer segments unaddressed by current solutions.</p>
-                    <div class="list">
-                        List of Existing Solutions
-                        <ul>
-                            <li>Save contact on phone with built-in app</li>
-                            <li>Open social media page/app to search and add as friend/contact</li>
-                            <li>Offer business cards</li>
-                            <li>vCard-like Solutions</li>
-                            <li>QR Code-based Network-less Solutions</li>
-                        </ul>
+                    <h3>Domain and Competitive Research</h3>
+                    <div class="process-learnings-box">
+                        <div class="process">
+                            <p>Gathered and organized information on existing solutions and identified value propositions unaddressed by current solutions.</p>
+                        </div>
+                        <div class="learnings">
+                            <p>Learned to learn from existing solutions and analyze their reasons of success or failure.</p>
+                        </div>
                     </div>
                 </div>
             </div>

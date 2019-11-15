@@ -2,6 +2,7 @@
     --theme-color-1: chocolate;
     --theme-color-2: rgb(12, 131, 167);
     --section-color: #fff;
+    --highlight-color: rgb(255, 255, 150);
   }
 
 body {
@@ -42,27 +43,39 @@ body {
 }
 
 header{
-    background: var(--theme-color-1);
     color: #fff;
     text-align: center;
     padding-bottom: 5px;
     padding-top: 5px;
-    margin: 1% 2% 0 2%;
+    margin: 0 2% 0 2%;
 }
 
 header h1{
+    background: var(--theme-color-1);
     padding: 0;
-    margin: 0;
+    margin: 1% 0 0 0;
     font-size: 2rem;
 }
 
 header h2{
+    background: var(--theme-color-1);
     padding: 0;
     margin: 0;
-    font-size:  1rem;
+    font-size:  1.2rem;
     font-weight: normal;
 }
+header h3{
+  margin: 0;
+  padding: 2px;
+  background: var(--theme-color-2);
+  font-size:  1rem;
+  font-weight: normal;
+  color: var(--highlight-color);
+}
 
+header h3 a{
+  color: var(--highlight-color);
+}
 .wrapper {
     display: flex;  
     flex-flow: row wrap;
@@ -114,7 +127,6 @@ h2{
     overflow: hidden;
     padding-top: 56.5%;
     position: relative;
-    margin: 0% 0%;
     }
   /*@media screen and (max-width: 1024px) {
   
@@ -222,4 +234,17 @@ h2{
   .artefact .image{width: 60%;}
   .artefact .list{width: 60%;}
   .artefact .image_long{width: 20%;}
+}
+
+.publication{
+  height: 2rem;
+  vertical-align: middle;
+}
+.publication p::before{
+  content: "";
+  display: inline-block;
+  background: url("../icons/paper.svg") no-repeat;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem 0 0;
 }

@@ -69,13 +69,22 @@
         
         <script src="js/projects.js"></script>
         <script>
-          var sliderOut = true;
+          /*var sliderOut = true;
           document.getElementById('side-menu').style.width = '200px';
-
+          var sliderOut;*/
+          if(window.matchMedia("(max-width: 568px)").matches){
+            sliderOut = false;
+            document.getElementById('arrow').setAttribute("transform", "rotate(180, 10, 20)");
+            document.getElementById('side-menu').style.marginLeft = '-170px';
+          }else{
+            sliderOut = true;
+            document.getElementById('side-menu').style.marginLeft = 0;
+          }
+          
           function rotate(){
             if(sliderOut){
               document.getElementById('arrow').setAttribute("transform", "rotate(180, 10, 20)");
-              document.getElementById('side-menu').style.width = '30px';
+              document.getElementById('side-menu').style.marginLeft = '-170px';
               if(window.matchMedia("(max-width: 568px)").matches){
                 document.getElementById('projects').style.marginLeft = '10px';
               }else{
@@ -84,7 +93,7 @@
               sliderOut = false;
             }else{
               document.getElementById('arrow').setAttribute("transform", "rotate(0)");
-              document.getElementById('side-menu').style.width = '200px';
+              document.getElementById('side-menu').style.marginLeft = 0;
               if(window.matchMedia("(max-width: 568px)").matches){
                 document.getElementById('projects').style.marginLeft = '10px';
               }else{

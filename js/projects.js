@@ -28,6 +28,8 @@ projects.push(
         teamworkIntro: "Coordinated teamwork and bridged communication between designers and developers.",
         webIntro: "Designed and created a website that introduces the app and the team.",
         mobileIntro: "Created an app that facilitates contact/social media exchange via QR codes.",
+
+        awardWinner: true,
         /**** Edits end here ****/
 
         introSelected: "generalIntro"
@@ -54,7 +56,7 @@ projects.push(
         //developmentIntro: "";
         uxResearchIntro: "Performed semi-structured interviews and prototype walkthroughs.",
         uxDesignIntro: "Designed donation experience using an affinity map and an experience map as ideation tools.",
-        teamworkIntro: "",
+        teamworkIntro: "Cooperated with designers and contributed my organizational and analytical skills.",
         //webIntro: "",
         //physicalIntro: "",
         /**** Edits end here ****/
@@ -90,9 +92,9 @@ projects.push(
         /**** Section to add info ****/
         title: "Online Statistic Managing System",
         fileName: "statistics",
-        generalIntro: "This statistics management system automatically processes statistics missionaries send online and visualizes the data collected over several weeks. It transformed they way missionaries in the South Africa Cape Town Mission of the Church of Jesus Christ of Latter-day Saints handled statistics. Originally, performance statistics of missionaries were collected via email. The headquarter spent time each week to manually sort the collected data. Moreover, only a very small portion of the data was used as reference for organization management, largely due to the lack of readability of the raw data.",
-        developmentIntro: "",
-        webIntro: "",
+        generalIntro: "Developing an automated weekly stats report system for leaders of a 90-man organization.",
+        developmentIntro: "Created a system with Google Sheets that manages and visualizes statistics collected through the internet.",
+        webIntro: "Created a system with Google Sheets that manages and visualizes statistics collected through the internet.",
         /**** Edits end here ****/
 
         introSelected: "generalIntro"
@@ -101,35 +103,33 @@ projects.push(
         /**** Section to add info ****/
         title: "Cephalomotion",
         fileName: "cephalomotion",
-        generalIntro: "In situations when our hands are busy, the head becomes a viable means of interacting with the computer. In this project, we explored ways the head can be used to control the computer. A multimodal webcam-based system was developed in this project.",
-        developmentIntro: "",
+        generalIntro: "Developing a head-controlled computer input application using the built-in webcam.",
+        developmentIntro: "Developed a head-controlled computer input application and a sensor data filter.",
+
+        publishedWork: true,
         /**** Edits end here ****/
 
         introSelected: "generalIntro"
     },
-    {
-        /**** Section to add info ****/
+    /*{
         title: "Outfit Pro",
         fileName: "outfit",
         generalIntro: "Some people spend a considerable amount of time trying on different outfits each morning. To save their time, we developed Outfit Pro, an FPGA-based system that helps visualize various outfit combinations.",
         developmentIntro: "",
         teamworkIntro: "",
         physicalIntro: "",
-        /**** Edits end here ****/
 
         introSelected: "generalIntro"
     },
     {
-        /**** Section to add info ****/
         title: "Taggem",
         fileName: "taggem",
         generalIntro: "Trying to locate a specific photo on a device can sometimes be difficult and frustrating. This app enables quick photo search by displaying search results in categories according to the tags assigned to each picture.",
         teamworkIntro: "",
         mobileIntro: "",
-        /**** Edits end here ****/
 
         introSelected: "generalIntro"
-    }
+    }*/
 );
 
 for(let i = 0; i < projects.length; i++){
@@ -139,7 +139,10 @@ for(let i = 0; i < projects.length; i++){
     htmlInsert += '<div id="project-box' + i +  '" class="project-container-box">\n';
     htmlInsert += '<a href="projects/' + projects[i].fileName + '.html" target="_blank">\n';
     htmlInsert += '<div class="project-container-text" style="background-image: url(\'images/projects/' + projects[i].fileName + '.jpg\'); background-size: cover;">\n';
-    htmlInsert += '<h3>' + projects[i].title + '</h3>\n';
+    htmlInsert += '<h3';
+    if(projects[i].awardWinner != undefined) htmlInsert += ' class="award-winner"';
+    if(projects[i].publishedWork != undefined) htmlInsert += ' class="published-work"';
+    htmlInsert += '>' + projects[i].title + '</h3>\n';
     htmlInsert += '<p id="project-intro' + i + '">' + projects[i].generalIntro + '</p>\n';
     htmlInsert += '</div></a>\n';
     // insert tags
