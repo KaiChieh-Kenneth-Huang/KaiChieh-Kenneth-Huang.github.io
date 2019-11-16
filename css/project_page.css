@@ -14,7 +14,7 @@ body {
   display: flex;  
   flex-flow: row wrap;
   text-align: center;
-  margin: 20px 20px 0 20px;
+  margin: 20px 2% 0 2%;
 }
 
 .width100{
@@ -45,7 +45,7 @@ body {
 header{
     color: #fff;
     text-align: center;
-    margin: 0 20px 0 20px;
+    margin: 0 2% 0 2%;
 }
 
 header h1{
@@ -79,7 +79,7 @@ header h3 a{
     flex-flow: row wrap;
     text-align: center;
     background:var(--section-color);
-    margin: 0 20px 0 20px;
+    margin: 0 2% 0 2%;
   }
 
 h1{
