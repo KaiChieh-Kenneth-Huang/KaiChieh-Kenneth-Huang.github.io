@@ -86,6 +86,7 @@ projects.push(
         physicalIntro: "Designed and developed the balance-shifting stylus with Arduino and 3D printed parts.",
         /**** Edits end here ****/
 
+        pendingPublication: true,
         introSelected: "generalIntro"
     },
     {
@@ -142,6 +143,7 @@ for(let i = 0; i < projects.length; i++){
     htmlInsert += '<h3';
     if(projects[i].awardWinner != undefined) htmlInsert += ' class="award-winner"';
     if(projects[i].publishedWork != undefined) htmlInsert += ' class="published-work"';
+    if(projects[i].pendingPublication != undefined) htmlInsert += ' class="pending-publication"';
     htmlInsert += '>' + projects[i].title + '</h3>\n';
     htmlInsert += '<p id="project-intro' + i + '">' + projects[i].generalIntro + '</p>\n';
     htmlInsert += '</div></a>\n';
