@@ -14,14 +14,14 @@ body {
   display: flex;  
   flex-flow: row wrap;
   text-align: center;
-  margin: 2% 2% 0 2%;
+  margin: 20px 20px 0 20px;
 }
 
 .width100{
   background: var(--section-color);
   width: 100%;
-  margin-top: 2%;
-  margin-bottom: 1%;
+  margin-top: 20px;
+  margin-bottom: 10px;
   padding: 20px;
 }
 
@@ -33,7 +33,7 @@ body {
 .width50-r{
   background: var(--section-color);
   width: 100%;
-  margin-top: 2%;
+  margin-top: 20px;
 }
 
 .inner-container{
@@ -45,20 +45,19 @@ body {
 header{
     color: #fff;
     text-align: center;
-    padding: 5px;
-    margin: 0 2% 0 2%;
+    margin: 0 20px 0 20px;
 }
 
 header h1{
     background: var(--theme-color-1);
-    padding: 5px;
-    margin: 1% 0 0 0;
+    padding: 5px 5px 0 5px;
+    margin: 10px 0 0 0;
     font-size: 2rem;
 }
 
 header h2{
     background: var(--theme-color-1);
-    padding: 5px;
+    padding: 0 5px 5px 5px;
     margin: 0;
     font-size:  1.2rem;
     font-weight: normal;
@@ -80,7 +79,7 @@ header h3 a{
     flex-flow: row wrap;
     text-align: center;
     background:var(--section-color);
-    margin: 0 2% 0 2%;
+    margin: 0 20px 0 20px;
   }
 
 h1{
@@ -180,7 +179,7 @@ h2{
 }
 
 .learning {
-  margin-top: 2%;
+  margin-top: 20px;
 }
 
 @media all and (min-width: 600px) {

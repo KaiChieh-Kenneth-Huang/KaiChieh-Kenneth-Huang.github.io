@@ -41,11 +41,11 @@
           </div>
         <!--Category filter-->
         <div id="side-menu" class="side-nav">
-            <svg class="btn-slide" width="20" height="40" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <svg class="btn-slide" width="30" height="60" xmlns="http://www.w3.org/2000/svg" version="1.1">
               <g>
-                <polygon id="arrow" points="15,10 5,20 15,30"
+                <polygon id="arrow" points="20,20 10,30 20,40"
                 style="fill:#ccc;stroke:#ccc;stroke-width:2;fill-rule:evenodd;" />
-                <rect class="btn" x="0" y="0" width="20" height="40" onclick="rotate()" />
+                <rect class="btn" x="0" y="0" width="30" height="60" onclick="rotate()" />
               </g>
             </svg>
 
@@ -74,7 +74,7 @@
           var sliderOut;*/
           if(window.matchMedia("(max-width: 568px)").matches){
             sliderOut = false;
-            document.getElementById('arrow').setAttribute("transform", "rotate(180, 10, 20)");
+            document.getElementById('arrow').setAttribute("transform", "rotate(180, 15, 30)");
             document.getElementById('side-menu').style.marginLeft = '-170px';
           }else{
             sliderOut = true;
@@ -83,7 +83,7 @@
           
           function rotate(){
             if(sliderOut){
-              document.getElementById('arrow').setAttribute("transform", "rotate(180, 10, 20)");
+              document.getElementById('arrow').setAttribute("transform", "rotate(180, 15, 30)");
               document.getElementById('side-menu').style.marginLeft = '-170px';
               if(window.matchMedia("(max-width: 568px)").matches){
                 document.getElementById('projects').style.marginLeft = '10px';
