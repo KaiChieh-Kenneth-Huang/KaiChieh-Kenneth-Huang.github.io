@@ -39,7 +39,6 @@ projects.push(
         title: "Carvel’s Online Cake Ordering",
         fileName: "carvel",
         generalIntro: "Enhancing Carvel's online cake ordering experience through user-centered design methods.",
-        highlightsIntro: "Enhancing Carvel's online cake ordering experience through user-centered design methods.",
         uxResearchIntro: "Performed documentation mining, competitive UX benchmarking, focus groups, and think-aloud testing.",
         uxDesignIntro: "Analyzed research findings and created design implications, personas, journey maps, and mockups.",
         teamworkIntro: "Cooperated with designers and contributed my organizational and analytical skills.",
@@ -52,12 +51,13 @@ projects.push(
         /**** Section to add info ****/
         title: "Micro-donation in Grocery Stores",
         fileName: "micro_donation",
-        generalIntro: "Designing a user-centerd micro-donation system in grocery stores.",
+        generalIntro: "Designing and prototyping a user-centerd micro-donation system in grocery stores.",
+        highlightsIntro: "Designing and prototyping a user-centerd micro-donation system in grocery stores.",
         //developmentIntro: "";
         uxResearchIntro: "Performed semi-structured interviews and prototype walkthroughs.",
         uxDesignIntro: "Designed donation experience using an affinity map and an experience map as ideation tools.",
         teamworkIntro: "Cooperated with designers and contributed my organizational and analytical skills.",
-        //webIntro: "",
+        webIntro: "Prototyped a functional interface using HTML, CSS, and Javascript",
         //physicalIntro: "",
         /**** Edits end here ****/
 

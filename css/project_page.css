@@ -199,39 +199,39 @@ h2{
   content: "Learnings";
 }
 
+.artefact .image, .artefact .image_long{
+  margin: 20px;
+  filter: drop-shadow(5px 5px 5px #CCC);
+}
+
 .artefact .image{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  filter: drop-shadow(5px 5px 5px #CCC);
 }
+.artefact .image_long{
+  display: inline-block;
+}
+
 .artefact .list{
   display: inline-block;
   width: 100%;
   text-align: left;
 }
-.artefact img{
-  width: 100%;
+.artefact img, .image_long img{
+  max-height: 80vh;
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }
-.artefact .image_long{
-  display: inline-block;
-  margin: 20px;
-  width: 50%;
-  filter: drop-shadow(5px 5px 5px #CCC);
-}
+
 @media all and (min-width: 600px) {
-  .artefact .image{width: 80%;}
   .artefact .list{width: 80%;}
-  .artefact .image_long{width: 35%;}
 }
 
 @media all and (min-width: 800px) {
-  .artefact .image{width: 60%;}
   .artefact .list{width: 60%;}
-  .artefact .image_long{width: 20%;}
 }
 
 .publication{
