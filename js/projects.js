@@ -86,7 +86,7 @@ projects.push(
         physicalIntro: "Designed and developed the balance-shifting stylus with Arduino and 3D printed parts.",
         /**** Edits end here ****/
 
-        pendingPublication: true,
+        publishedWork: true,
         introSelected: "generalIntro"
     },
     {
