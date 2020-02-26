@@ -1,11 +1,11 @@
 var projects = [];
-const initialFilter = 'highlightsIntro';
+const initialFilter = 'featuredIntro';
 var currentFilter = initialFilter;
 
 // list of tags
 /*
 generalIntro: "",
-highlightsIntro: "",
+featuredIntro: "",
 developmentIntro: "",
 uxResearchIntro: "",
 uxDesignIntro: "",
@@ -21,7 +21,7 @@ projects.push(
         title: "Handl",
         fileName: "handl",
         generalIntro: "Developing a contact exchange mobile app using user-centered design methods.",
-        highlightsIntro: "Developing a contact exchange mobile app using user-centered design methods.",
+        featuredIntro: "Developing a contact exchange mobile app using user-centered design methods.",
         developmentIntro: "Developed app UI and user information storage/management and translation into QR codes.",
         uxResearchIntro: "Performed interviews and competitive analysis to identify users' needs.",
         uxDesignIntro: "Designed and tested clickable mockups in early product interations.",
@@ -52,7 +52,7 @@ projects.push(
         title: "Micro-donation in Grocery Stores",
         fileName: "micro_donation",
         generalIntro: "Designing and prototyping a user-centerd micro-donation system in grocery stores.",
-        highlightsIntro: "Designing and prototyping a user-centerd micro-donation system in grocery stores.",
+        featuredIntro: "Designing and prototyping a user-centerd micro-donation system in grocery stores.",
         //developmentIntro: "";
         uxResearchIntro: "Performed semi-structured interviews and prototype walkthroughs.",
         uxDesignIntro: "Designed donation experience using an affinity map and an experience map as ideation tools.",
@@ -67,7 +67,7 @@ projects.push(
         title: "this.website",
         fileName: "",
         generalIntro: "",
-        highlightsIntro: "",
+        featuredIntro: "",
         developmentIntro: "",
         uxResearchIntro: "sdfsdf",
         uxDesignIntro: "sdfds",
@@ -80,7 +80,7 @@ projects.push(
         title: "Glissade",
         fileName: "glissade",
         generalIntro: "Research and development of a novel balance-shifting stylus with orientation sensing capability.",
-        highlightsIntro: "Research and development of a novel balance-shifting stylus with orientation sensing capability.",
+        featuredIntro: "Research and development of a novel balance-shifting stylus with orientation sensing capability.",
         developmentIntro: "Developed algorithms to overcome sensing issues and novel games with Unity.",
         teamworkIntro: "Collaborated with students and advisor in user research sessions and application development.",
         physicalIntro: "Designed and developed the balance-shifting stylus with Arduino and 3D printed parts.",
@@ -149,8 +149,8 @@ for(let i = 0; i < projects.length; i++){
     htmlInsert += '</div></a>\n';
     // insert tags
     htmlInsert += '<div id="project-tags' + i +  '"class="project-container-tags">\n';
-    if(projects[i].highlightsIntro != undefined){
-        htmlInsert += '<button id="highlightsIntro-tag' + i + '" onclick="changeProjectIntro(\'highlightsIntro\','  + i + ')">Highlights</button>'
+    if(projects[i].featuredIntro != undefined){
+        htmlInsert += '<button id="featuredIntro-tag' + i + '" onclick="changeProjectIntro(\'featuredIntro\','  + i + ')">Featured</button>'
     }
     if(projects[i].developmentIntro != undefined){
         htmlInsert += '<button id="developmentIntro-tag' + i + '" onclick="changeProjectIntro(\'developmentIntro\','  + i + ')">Development</button>'
@@ -188,7 +188,7 @@ for(let i = 0; i < projects.length; i++){
               </div> \
             </a> \
             <div class="project-container-tags"> \
-                <button onclick="myFunction()">Highlights</button> \
+                <button onclick="myFunction()">Featured</button> \
                 <button onclick="myFunction()">UX Research</button> \
                 <button onclick="myFunction()">UX Design</button> \
                 <button onclick="myFunction()">Teamwork</button> \

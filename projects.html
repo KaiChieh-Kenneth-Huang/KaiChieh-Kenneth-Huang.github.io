@@ -14,12 +14,11 @@
         <link rel="stylesheet" href="css/projects.css">
     </head>
     <body>
+      <div class="navbar-bkg"></div>
         <nav class="navbar">   
-          <ul class="navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <!--<li><a href="#">Achievements</a></li>-->
-            <li><a href="contact.html">Contact</a></li>
+          <ul class="navbar-items">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="projects.html">PORTFOLIO</a></li>
           </ul>
         </nav>
         <!--Hamberger menu for smaller devices-->
@@ -30,15 +29,15 @@
               <div>
                 <div>
                   <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <!--<li><a href="#">Achievements</a></li>-->
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="projects.html">PORTFOLIO</a></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
+
+
         <!--Category filter-->
         <div id="side-menu" class="side-nav">
             <svg class="btn-slide" width="30" height="60" xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -52,7 +51,7 @@
             <h1>EXPLORE</h1>
             <p></p>
             <a id="filter-generalIntro" href="#All" onclick="searchTag('generalIntro')">All</a>
-            <a id="filter-highlightsIntro" href="#Highlights" onclick="searchTag('highlightsIntro')">Highlights</a>
+            <a id="filter-featuredIntro" href="#Featured" onclick="searchTag('featuredIntro')">Featured</a>
             <a id="filter-developmentIntro" href="#Development" onclick="searchTag('developmentIntro')">Development</a>
             <a id="filter-uxResearchIntro" href="#UX_Research" onclick="searchTag('uxResearchIntro')">UX Research</a>
             <a id="filter-uxDesignIntro" href="#UX_Design" onclick="searchTag('uxDesignIntro')">UX Design</a>
@@ -66,6 +65,10 @@
         <div id="projects" class="project-container">
           <!--Populated using js/projects.js-->
         </div>
+
+        <footer class="footer">
+          <p>© 2020 by Kai-Chieh Huang. Coded from scratch using Vanilla JS and CSS.</p>
+        </footer>
         
         <script src="js/projects.js"></script>
         <script>

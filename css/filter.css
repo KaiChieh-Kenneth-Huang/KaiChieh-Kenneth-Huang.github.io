@@ -6,7 +6,7 @@
     height:410px;
     width: 200px;
     position:fixed;
-    top:80px;
+    top:100px;
     left:0;
     border-radius: 0 15px 15px 0;
     background-color:#111;
@@ -34,7 +34,7 @@
     text-decoration:none;
     text-align: left;
     font-size:17px;
-    color:#fff;
+    color:#eee;
     display:block;
     transition:0.3s;
   }  
@@ -57,7 +57,7 @@
   }
   
   .side-nav a:hover{
-    color:#fff;
+    color:#eee;
   }
   
   .side-nav .btn-slide{

@@ -5,6 +5,10 @@
     --highlight-color: rgb(255, 255, 150);
   }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Proxima Nova', 'Roboto', Georgia;
     background: rgb(245, 245, 245);
@@ -14,17 +18,22 @@ body {
   display: flex;  
   flex-flow: row wrap;
   text-align: center;
-  margin: 20px 2% 0 2%;
+  margin: 0 2% 20px 2%;
 }
 
 .width100{
   background: var(--section-color);
   width: 100%;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding: 20px;
 }
 
+.width50-wrapper{
+  display: flex;  
+  flex-flow: row wrap;
+  margin-bottom: 20px;
+  width: 100%;
+}
 .width50-l{
   background: var(--section-color);
   width: 100%;
@@ -43,7 +52,7 @@ body {
 }
 
 header{
-    color: #fff;
+    color: #fefefe;
     text-align: center;
     margin: 0 2% 0 2%;
 }
@@ -79,7 +88,7 @@ header h3 a{
     flex-flow: row wrap;
     text-align: center;
     background:var(--section-color);
-    margin: 0 2% 0 2%;
+    margin: 0 2% 20px 2%;
   }
 
 h1{
@@ -102,11 +111,13 @@ h2{
     text-align: left;
   }
   
-  .aside-1 {
+  .aside h2{
+    margin: 0;
+  }
+  .aside p{
+    margin-top: 5px;
   }
   
-  .aside-2 {
-  }
   
   @media all and (min-width: 600px) {
     .aside { flex: 1 0 0; }
@@ -114,7 +125,7 @@ h2{
     .width50-r { width: 49%; margin: 0 0 0 1%;}
   }
   
-  @media all and (min-width: 800px) {
+  @media all and (min-width: 1200px) {
     .main    { flex: 2 0px; }
     .aside-1 { order: 1; } 
     .main    { order: 2; }
@@ -245,4 +256,86 @@ h2{
   width: 2rem;
   height: 2rem;
   margin: 0 1rem 0 0;
+}
+
+.accordion {
+  background-color: var(--theme-color-1);
+  color: #fefefe;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px solid rgb(190, 95, 28);
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: rgb(167, 83, 24);
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #fefefe;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  background-color: #eee;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  text-align: left;
+  display: flex;
+}
+
+.panel-left{
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.panel-left p{
+  margin-top: 5px;
+}
+.panel-left h4{
+  margin-bottom: 5px;
+}
+
+.panel-right{
+  box-sizing: border-box;
+  padding: 20px;
+  display: none;
+}
+
+.panel-right > div{
+  max-height: 30%;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.panel-right > div > img{
+  max-height: 100%;
+  max-width: 100%;
+  box-shadow: 0 4px 8px 0 #CCC, 0 4px 8px 0 #CCC;
+}
+
+.activity-container{
+  padding-left: 20px;
+}
+
+@media all and (min-width: 800px) {
+  .panel-left { width: 60%;}
+  .panel-right { width: 40%; display: flex; flex-direction: column; justify-content: none;}
+}
+@media all and (min-width: 1200px) {
+  .panel-right {justify-content: space-between;}
 }
